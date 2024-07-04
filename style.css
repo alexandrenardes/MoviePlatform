@@ -11,6 +11,7 @@ body{
 
 header{
     padding: 8px 0;
+    top: 0;
 }
 
 /*com o conteúdo do .center abaixo você consegue fazer um header responsivo para qualquer resolução*/
@@ -65,6 +66,11 @@ header{
     height: 400px;
     background-size: cover;
     background-position: center;
+}
+
+/*cards-movies*/
+.card-movie{
+
 }
 
 

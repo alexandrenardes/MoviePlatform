@@ -22,7 +22,7 @@ function loadPopularMovies() {
     };
 
     // Realizar a consulta na API do TMDb para obter os filmes mais populares
-    fetch('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc', options)
+    fetch('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=true&language=en-US&page=1&sort_by=popularity.desc', options)
     .then(response => response.json())
     .then(data=>{
         data.results.map((i,j)=>{
@@ -46,7 +46,7 @@ function loadPopularMovies() {
             }
         })
     })
-    .catch(err => console.error('Erro ao buscar os filmes:', err));
+    .catch(err => console.error('Erro ao buscar os filmes populares:', err));
 }
 
 // Executar a função após o carregamento completo do DOM
